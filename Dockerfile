@@ -49,7 +49,7 @@ COPY ./assets ocr-app/assets
 
 WORKDIR ocr-app
 COPY ./build/libs/ocr-tesseract-0.0.1-SNAPSHOT.jar ocr-app.jar
-ENTRYPOINT ["java", "-jar", "ocr-app.jar"]
+CMD  ["java", "-jar", "ocr-app.jar"]
 
 #CMD ["java", "-version"]
 #CMD ["pkg-config", "--modversion", "lept"]
